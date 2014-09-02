@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <!-- scripts -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- styles -->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="user-logged">
+
+    <header id="main-header">
+        <div id="user-icon">
+            <span class="logged-users">
+                Hello
+                <span id="user-name">
+                    Andy
+                </span>
+            </span>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#" class="home">Flatspot</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li>
+                    <a href="#" class="test has-sub-menu has-sub-menu-clothing test2">Clothing</a>
+                </li>
+                <li>
+                    <a href="#" class="has-sub-menu has-sub-menu-brands">Brands</a>
+                </li>
+                <li><a href="#">Skateboarding</a></li>
+                <li>
+                    <a href="#" class="has-sub-menu has-sub-menu-journal">Journal</a>
+                </li>
+                <li class="logged-users sale"><a href="#">Sale</a></li>
+            </ul>
+            <div class="sub-menu sub-menu-clothing">
+                <div class="sub-menu-wrap">
+                    <div class="sub-menu-header">Most popular:</div>
+                    <ul class="sub-menu-content">
+                        <li><a href="#">Less</a></li>
+                        <li><a href="#">Less</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Levi's</a></li>
+                        <li><a href="#">Levi's</a></li>
+                        <li><a href="#">Levi's</a></li>
+                        <li><a href="#">Nike Sb</a></li>
+                        <li><a href="#">Nike Sb</a></li>
+                        <li><a href="#">Nike Sb</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Palace</a></li>
+                        <li><a href="#">Palace</a></li>
+                        <li><a href="#">Palace</a></li>
+                        <li><a href="#">Patagonia</a></li>
+                    </ul>
+                    <div class="sub-menu-footer"><a href="#">View all brands <span>(76)</span></a></div>
+                </div>
+            </div>
+            <div class="sub-menu sub-menu-brands">
+                <div class="sub-menu-wrap">
+                    <div class="sub-menu-header">Most popular:</div>
+                    <ul class="sub-menu-content">
+                        <li><a href="#">Less</a></li>
+                        <li><a href="#">Less</a></li>
+                        <li><a href="#">Less</a></li>
+                        <li><a href="#">Levi's</a></li>
+                        <li><a href="#">Levi's</a></li>
+                        <li><a href="#">Levi's</a></li>
+                        <li><a href="#">Nike Sb</a></li>
+                        <li><a href="#">Nike Sb</a></li>
+                        <li><a href="#">Nike Sb</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Only</a></li>
+                        <li><a href="#">Palace</a></li>
+                        <li><a href="#">Palace</a></li>
+                        <li><a href="#">Palace</a></li>
+                        <li><a href="#">Patagonia</a></li>
+                    </ul>
+                    <div class="sub-menu-footer"><a href="#">View all brands <span>(76)</span></a></div>
+                </div>
+            </div>
+            <div class="sub-menu sub-menu-journal">
+                <div class="sub-menu-wrap">
+                    <ul class="sub-menu-content">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="search-shop-wrap">
+            <div class="search-icon-header"></div>
+            <div class="search">
+                <div class="search-row">
+                    <input type="search" name="search" placeholder="Search" />
+                    <button type="submit" class="submit-search"></button>
+                    <button class="close-search" type="button"></button>
+                </div>
+                <ul>
+                    <li>Palace</li>
+                    <li>Palace T-Shirt</li>
+                    <li>Palace All Terrain Bucket Hat</li>
+                    <li>Palace Tri-Line Yard T-Shirt</li>
+                    <li>Palace Cotch Jacket</li>
+                    <li>Palace Clothing</li>
+                </ul>
+            </div>
+            <div class="shop-cart-header">(<span class="cart-item-count">2</span>)</div>
+        </div>
+    </header>
+
+    <section id="slider">
+        asdf
+    </section>
+
+    <main>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="footer-row">
+            <nav id="social-links">
+                <a href="#" class="facebook"></a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="pinterest"></a>
+                <a href="#" class="tumblr"></a>
+                <a href="#" class="no-idea"></a>
+                <a href="#" class="i-think-its-blogger"></a>
+            </nav>
+            <div id="newsletter-sign-up">Sign Up To Newsletter</div>
+        </div>
+        <div class="footer-row">
+            <nav id="footer-menu">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns/Exchanges</a>
+                <a href="#">FAQs</a>
+            </nav>
+            <div id="choose-currency">
+                Currency:
+                <input id="gbp" type="radio" name="currency" value="gbp" />
+                <label for="gbp">&pound;</label>
+                <input id="usd" type="radio" name="currency" value="usd" />
+                <label for="usd">$</label>
+                <input id="euro" type="radio" name="currency" value="euro" />
+                <label for="euro">€</label>
+            </div>
+        </div>
+        <div id="site-info">
+            <ul>
+                <li><a href="#">Therms and Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li>
+                    &copy; Flatspot
+                    <script>document.write(new Date().getFullYear())</script>
+                </li>
+                <li>Site Designed by <a href="#">Atwork</a></li>
+            </ul>     
+        </div>
+        <div id="footer-promotion">
+            <div>Free shipping to USA edns tomorrow</div>
+            <div>Use code freestuff for 10% off</div> 
+            <div>Join our mailing list for 15% off</div>
+            <div class="close-footer-promotion">Close</div>
+        </div>
+    </footer>
+</body>
+</html>
