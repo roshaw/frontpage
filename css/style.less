@@ -17,8 +17,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #282828;
+    background: rgba(0,0,0,.8);
     height: 60px;
+    z-index: 100;
 
     .home {
         height: 60px;
@@ -119,6 +120,9 @@ body {
 
                 &:first-child:after, &:last-child:after {
                     display: none;
+                }
+                &.sale a {
+                    color: red;
                 }
             }
         }
@@ -408,7 +412,52 @@ body {
 //slider
 #slider {
     width: 100%;
-    margin-top: 60px;
+    padding: 0 60px;
+    background: #ebebe6;
+
+    .csSlideOuter {
+        position: relative;
+    }
+    .csPager  {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    li {
+        
+    }
+    .first-slide .slider-content-wrap {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0;
+        .slider-content {
+            width: 1200px;
+            margin: 0 auto;
+            > div {
+                width: 386px;
+                text-align: center;
+                color: #fff;
+                a {
+                    color: #fff;
+                }
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+            h2 {
+                text-transform: uppercase;
+                font-size: 48px;
+                padding: 20px;
+            }
+            p {
+                height: 80px;
+                padding: 30px;
+            }
+        }
+    }
 }
 
 main, #main-footer {
@@ -425,9 +474,14 @@ main, #main-footer {
     border-top: 1px solid @border-color;
 }
 
-//Logged and not logged users 
-.user-not-logged .logged-users {
-    display: none;
+//Logged and not logged users
+.user-not-logged {
+    .logged-users {
+        display: none;
+    }
+    #main-nav .sale {
+        display: none;
+    }
 }
 
 .user-logged .non-logged-users {

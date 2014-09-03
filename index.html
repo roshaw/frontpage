@@ -6,13 +6,53 @@
 
     <!-- scripts -->
     <script src="js/jQuery.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script async src="js/script.js"></script>
 
     <!-- styles -->
     <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/lightSlider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider({
+                slideWidth: 1920,
+                //slideMargin: 0,
+                //slideMove: 1,
+                //minSlide: 1,
+                //maxSlide: 8,
+
+                //pager: true,
+                controls: false,
+                //prevHtml: '',
+                //nextHtml: '',
+                //keyPress: true,
+                //thumbWidth: 50,
+                //thumbMargin: 3,
+                //gallery: false,
+                //currentPagerPosition: 'middle',
+                //useCSS: true,
+                //auto: false,
+                //pause: 2000,
+                //loop: true,
+                //easing: '',
+                //speed: 1000,
+                //mode: "slide",
+                //swipeThreshold: 10,
+
+                onBeforeStart: function () { },
+                onSliderLoad: function () { },
+                onBeforeSlide: function () { },
+                onAfterSlide: function () { },
+                onBeforeNextSlide: function () { },
+                onBeforePrevSlide: function () { }
+            });
+        });
+    </script>
+
 </head>
-<body class="user-logged">
+<body class="user-not-logged">
 
     <header id="main-header">
         <div id="user-icon">
@@ -119,7 +159,28 @@
     </header>
 
     <section id="slider">
-        asdf
+        <ul id="lightSlider">
+            <li class="first-slide">
+                <img src="img/slider-img1.jpg" />
+                <div class="slider-content-wrap">
+                    <div class="slider-content">
+                        <div>
+                            <h3>Blog</h3>
+                            <h2>Adidas skate copa collection</h2>
+                            <p>Bit of opitonal text about the slide that really doesn't matter. But optional information is also available in the train station in Kaspichan, and airport in Krumovgrad also.</p>
+                            <button class="read-more">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/slider-img2.jpg" />
+                <div class="slider-content">
+                    <button class="youtube-play"></button>
+                    <p>Bit of opitonal text about the slide that really doesn't matter. But optional information is also available in the train station in Kaspichan, and airport in Krumovgrad also.</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <main>

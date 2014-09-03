@@ -12,8 +12,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #282828;
+  background: rgba(0, 0, 0, 0.8);
   height: 60px;
+  z-index: 100;
 }
 #main-header .home {
   height: 60px;
@@ -109,6 +110,9 @@ body {
 #main-header nav > ul > li:first-child:after,
 #main-header nav > ul > li:last-child:after {
   display: none;
+}
+#main-header nav > ul > li.sale a {
+  color: red;
 }
 #main-nav .sub-menu {
   display: none;
@@ -355,7 +359,47 @@ body {
 }
 #slider {
   width: 100%;
-  margin-top: 60px;
+  padding: 0 60px;
+  background: #ebebe6;
+}
+#slider .csSlideOuter {
+  position: relative;
+}
+#slider .csPager {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+#slider .first-slide .slider-content-wrap {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 0;
+}
+#slider .first-slide .slider-content-wrap .slider-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#slider .first-slide .slider-content-wrap .slider-content > div {
+  width: 386px;
+  text-align: center;
+  color: #fff;
+}
+#slider .first-slide .slider-content-wrap .slider-content > div a {
+  color: #fff;
+}
+#slider .first-slide .slider-content-wrap .slider-content h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#slider .first-slide .slider-content-wrap .slider-content h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  padding: 20px;
+}
+#slider .first-slide .slider-content-wrap .slider-content p {
+  height: 80px;
+  padding: 30px;
 }
 main,
 #main-footer {
@@ -373,6 +417,9 @@ main,
   border-top: 1px solid #c8c8c8;
 }
 .user-not-logged .logged-users {
+  display: none;
+}
+.user-not-logged #main-nav .sale {
   display: none;
 }
 .user-logged .non-logged-users {
