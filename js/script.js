@@ -2,7 +2,8 @@
 
     var $searchShopWrap = $('#search-shop-wrap');
     var $mainNav = $('#main-nav');
-
+    var $slider = $('#slider');
+    
     //Click on the search icon
     $searchShopWrap.find('.search-icon-header').on('click', function () {
 
@@ -50,5 +51,14 @@
             $mainNav.find('.' + menuClass).addClass('active');
         }
         return false;
+    });
+
+    //play youtube slider video
+    $slider.find('.youtube-play').on('click', function () {
+        $slider.find('.second-slide').addClass('play');
+    });
+
+    $('#footer-promotion .close-footer-promotion').on('click', function () {
+        $('#footer-promotion').hide();
     });
 });
